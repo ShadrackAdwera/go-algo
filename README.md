@@ -11,7 +11,7 @@ Data structures &amp; Algorithms refresher
      every value in the slice has its corresponding value squared in the second slice ps
      the frequency of values must be the same.
 2. Multiple Pointers
-   - function accepts a sorted array and counts unique values in the array
+   - function accepts a sorted slice and counts unique values in the slice
 
 ## Licence
 
