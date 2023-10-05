@@ -59,7 +59,7 @@ func TestSame(t *testing.T) {
 
 	for _, testCase := range testCases {
 		t.Run(testCase.name, func(t *testing.T) {
-			result := Same(testCase.num1, testCase.num2)
+			result := same(testCase.num1, testCase.num2)
 			require.Equal(t, result, testCase.expectedResult)
 		})
 	}
