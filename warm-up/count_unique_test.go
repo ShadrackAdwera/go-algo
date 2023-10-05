@@ -45,7 +45,7 @@ func TestCountUniqueValues(t *testing.T) {
 		{
 			name: "Test Negative Values",
 			values: []int{-3, -2, -2, -1, -1, 0, 1, 1, 2, 3},
-			expectedResult: 4,
+			expectedResult: 7,
 		},
 	}
 
