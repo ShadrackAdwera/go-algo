@@ -9,7 +9,7 @@ import (
  every value in the array has its corresponding value squared in the second array
  the frequency of values must be the same
 */
-func Same(num1 []int, num2 []int) bool {
+func same(num1 []int, num2 []int) bool {
 	if len(num1) != len(num2) {
 		return false
 	}

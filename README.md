@@ -10,6 +10,8 @@ Data structures &amp; Algorithms refresher
    - the function should accept two slices of type int and return true if
      every value in the slice has its corresponding value squared in the second slice ps
      the frequency of values must be the same.
+2. Multiple Pointers
+   - function accepts a sorted array and counts unique values in the array
 
 ## Licence
 
