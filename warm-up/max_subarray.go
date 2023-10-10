@@ -34,7 +34,9 @@ func maxSubSliceSumOptimized(nums []int, lenSubSlice int) int {
 	// Sliding window approach
 	for i := lenSubSlice; i < len(nums); i++ {
 		windowSum = windowSum - nums[i-lenSubSlice] + nums[i]
-		maxSum = int(math.Max(float64(maxSum), float64(windowSum)))
+		if windowSum > maxSum {
+			maxSum = windowSum
+		}
 	}
 
 	return maxSum
