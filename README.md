@@ -12,6 +12,8 @@ Data structures &amp; Algorithms refresher
      the frequency of values must be the same.
 2. Multiple Pointers
    - function accepts a sorted slice and counts unique values in the slice
+3. Sliding Window
+   - Max sum of a sub slice
 
 ## Licence
 
