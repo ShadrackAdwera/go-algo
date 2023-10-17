@@ -15,6 +15,13 @@ Data structures &amp; Algorithms refresher
 3. Sliding Window
    - Max sum of a sub slice
 
+## Search
+
+- This package contains the search algorithms
+  - Linear Search
+    - Time complexity of O(n)
+    - Space Complexity O(1)
+
 ## Licence
 
 [MIT](./LICENSE)
