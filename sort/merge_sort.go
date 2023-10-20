@@ -27,3 +27,14 @@ func merge(leftSlice []int, rightSlice []int) []int {
 
 	return result
 }
+
+func mergeSort(values []int) []int {
+	// base case
+	if len(values) <= 1 {
+		return values
+	}
+
+	middleIdx := len(values) / 2
+
+	return merge(mergeSort(values[0:middleIdx]), mergeSort(values[middleIdx:]))
+}
