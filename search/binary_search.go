@@ -28,3 +28,35 @@ func binarySearch(values []string, valueToSearch string) int {
 
 	return -1
 }
+
+// binary search with dynamic parameters
+
+func binarySearchWithDynamicParameters(values []interface{}, valueToSearch interface{}) int {
+	switch valueToSearch := valueToSearch.(type) {
+	case int:
+		vals := make([]int, len(values))
+
+		for i, v := range values {
+			vals[i] = v.(int)
+		}
+
+		idx := sort.SearchInts(vals, valueToSearch)
+
+		if idx < len(vals) && vals[idx] == valueToSearch {
+			return idx
+		}
+	case string:
+		vals := make([]string, len(values))
+		for i, v := range values {
+			vals[i] = v.(string)
+		}
+
+		idx := sort.SearchStrings(vals, valueToSearch)
+
+		if idx < len(vals) && vals[idx] == valueToSearch {
+			return idx
+		}
+	}
+
+	return -1
+}
